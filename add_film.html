@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>New Film Form </title>
+	
+<body>
+    
+	<table border = 1>
+	<form action = "add_film.php" method = "post"> 
+	<tr>
+	<td> Title
+	<p> <input type = "text" size = "20" name = "title">
+	</td>
+	<td> Description
+	<p> <textarea name = "description" rows = "1 cols = "300"> </textarea>
+	</td>
+	<td> Release Year 
+	<p> <input type = "text" size = "20" name = "release_year">
+	</td>
+	<td> Language ID 
+	<p>
+	<select name = "language_id">
+	    <option value = "1"> English</option>
+		<option value = "2"> Italian</option>
+		<option value = "3"> Japanese</option>
+		<option value = "4"> Mandarin</option>
+		<option value = "5"> French</option>
+        <option value = "6"> German</option>		
+	</select>
+	</td>
+	<td> Rental Duration
+	<p> <input type = "text" size = "20" name = "rental_duration"> Days
+	</td>
+	<td> Rental Rate
+	<p> $<input type = "text" size = "20" name = "rental_rate"> 
+	</td>
+	<td> Movie Length (in Minutes)
+	<p> <input type = "text" size = "20" name = "length"> Minutes
+	</td>
+	<td> Replacement Cost
+	<p> $<input type = "text" size = "20" name = "replacement_cost">
+	</td>
+	<td> Rating
+	<p> <select name = "rating">
+	    <option value = "G"> G </option>
+		<option value = "PG"> PG </option>
+		<option value = "PG-13"> PG-13 </option>
+		<option value = "R"> R </option>
+		<option value = "NC-17"> NC-17 </option>
+		</select>
+	</td>
+	<td> Special Features
+	<p> <select name = "special_features">
+	    <option value = "Trailers"> Trailers </option>
+		<option value = "Commentaries"> Commentaries </option>
+		<option value = "Deleted Scenes"> Deleted Scenes </option>
+		<option value = "Behind the Scenes"> Behind the Scenes </option>
+		</select>
+	</table>
+	<p>
+	<input type = "submit" value = "Save">
+	<input type = "reset" value = "Cancel">
+	</form>
+
+
+
+
+</body>
+</html>
